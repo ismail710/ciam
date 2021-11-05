@@ -1,0 +1,196 @@
+<!--Before digging into the code , beware , be scared , fear it , lists are not working for some reason
+(i suspect it's because of the css , when I deleted the CSS link it worked. The 
+CSS only contained the navbar style , so that's probably what's causing the problem)-->
+<!--The problem with lists is fixed..The index numbers in fact are HIDDEN AT THE RIGHT OF THE MARGIN
+. I DONT KNOW HOW????? I GUESS THAT'S HOW IT WORKS FOR YOU -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/Analysecour.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>CALCULUS 1: COURSE</title>
+</head>
+
+<body>
+    <!--///////This stuff concerns the navbard feel free to skip it (in fact you should skip it)\\\\\-->
+    <nav>
+        <div class="logo">
+            <a href="#"><img src="Testingforthelogo.png" class="ImageLogo" alt="Logo CIAM" height="64"; width="64";></a>
+        </div>
+        <label for="btn" class="icon">
+            <span class="fa fa-bars" aria-hidden="true"></span>
+        </label>
+        <input type="checkbox" id="btn">
+        <ul>
+            <li><a href="learnpage.html">Home</a></li>
+            <li>
+                <label for="btn-1" class="show">Learn +</label>
+                <a href="#">Learn</a>
+                <input type="checkbox" id="btn-1">
+                <ul>
+                    <li><a href="AnalyseCours.html">Mathematique</a></li>
+                    <li><a href="Errorpage.html">Informatique</a></li>
+                    <li>
+                        <label for="btn-2" class="show">More +</label>
+                        <a href="#">More
+                            <span class="fa fa-plus" aria-hidden="true"></span>
+                        </a>
+                        <input type="checkbox" id="btn-2">
+                        <ul>
+                            <li><a href="AnalyseExercice.html">Practice</a></li>
+                            <li><a href="Errorpage.html">Ressources</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="Errorpage.html">Contact us</a></li>
+            <li><a href="#">Login</a></li>
+        </ul>
+    </nav>
+    <!--///////The stuff above concerns the navbard feel free to skip it (in fact you should skip it)\\\\\-->
+
+<div class="IamNotWorkingOnThatOneByOne" style="background-color:#ffffff;"><h1 class="CoursAnalyseEntête">ANALYSIS 1: COURSE</h1>
+<h2 class="Introduction">Introduction</h2>
+<p>Calculus, originally called infinitesimal calculus or "the calculus of infinitesimals", is the mathematical study of continuous change, in the same way that geometry is the study of shape and algebra is the study of generalizations of arithmetic operations.</br>
+
+    It has two major branches, differential calculus and integral calculus; the former concerns instantaneous rates of change, and the slopes of curves, while integral calculus concerns accumulation of quantities, and areas under or between curves. These two branches are related to each other by the fundamental theorem of calculus, and they make use of the fundamental notions of convergence of infinite sequences and infinite series to a well-defined limit.</br>
+    
+    Infinitesimal calculus was developed independently in the late 17th century by Isaac Newton and Gottfried Wilhelm Leibniz. Today, calculus has widespread uses in science, engineering, and economics. </br>
+    
+    In mathematics education, calculus denotes courses of elementary mathematical analysis, which are mainly devoted to the study of functions and limits. The word calculus (plural calculi) is a Latin word, meaning originally "small pebble" (this meaning is kept in medicine – see Calculus (medicine)). Because such pebbles were used for counting (or measuring) a distance travelled by transportation devices in use in ancient Rome, the meaning of the word has evolved and today usually means a method of computation. It is therefore used for naming specific methods of calculation and related theories, such as propositional calculus, Ricci calculus, calculus of variations, lambda calculus, and process calculus.</br>
+    it is a skill only so important to an engineer and this is why we will go through its basis for this course.<a style="font-size: smaller;">But if you believe you are already understanding enough then why don't you try some <a href="AnalyseExercice.html" style="font-size: smaller;">exercices</a>?</a>
+    </br>
+    (however you will have to keep in mind that this is just for filling and showing what functionalities our site offer. if you ever wish for a correct course , we will try to work on it on due time(Just send me an email and i'll happily))
+</p>
+<!--This list acts as an index the same as the index of a wikipedia page (I need to put it on a table)-->
+<div class="ListDeCours">
+    <h3><a href="#LTC1">CHAPTER 1: limits</a></h3>
+    <ol>
+        <li class="ListeIndexation"><a href="#LTC1I1">Tangeant lines</a></li>
+        <li class="ListeIndexation"><a href="#LTC1I2">The limit</a></li>
+        <li class="ListeIndexation"><a href="#LTC1I3">The definition of a limit</a></li>
+        <li class="ListeIndexation"><a href="#LTC1I4">Continuity</a></li>
+     </ol>
+    <h3><a href="#LTC2">CHAPTER 2: derivatives</a></h3>
+        <ol><li class="ListeIndexation"><a href="#LTC2I1">UNLOCK IN FULL VERSION OF WEBSITE</a></li>
+        <li class="ListeIndexation"><a href="#LTC2I2">UNLOCK IN FULL VERSION OF WEBSITE</a></li>
+        <li class="ListeIndexation"><a href="#LTC2I3">UNLOCK IN FULL VERSION OF WEBSITE</a></li>
+        <li class="ListeIndexation"><a href="#LTC2I4">UNLOCK IN FULL VERSION OF WEBSITE</a></li></ol>
+    <h3><a href="#LTC3">CHAPTER 3: integrals</a></h3>
+    <ol> 
+        <ul class="ListeIndexation"><a href="#LTC3I1">UNLOCK IN FULL VERSION OF WEBSITE</a></ul>
+        <ul class="ListeIndexation"><a href="#LTC3I2">UNLOCK IN FULL VERSION OF WEBSITE</a></ul>
+        <ul class="ListeIndexation"><a href="#LTC3I3">UNLOCK IN FULL VERSION OF WEBSITE</a></ul>
+        <ul class="ListeIndexation"><a href="#LTC3I4">UNLOCK IN FULL VERSION OF WEBSITE ,</a></ul>
+    </ol>
+</div>
+<span class="picture"><img src="Ressources and pictures\IMG-20211104-WA0019.jpg"></span>
+<h1 class="T" id="LTC1">CHAPTER 1: limits</h1>
+    <p>The topic that we will be examining in this chapter is that of Limits.  This is the first of three major topics that we will be covering in this course.  While we will be spending the least amount of time on limits in comparison to the other two topics limits are very important in the study of Calculus.  We will be seeing limits in a variety of places once we move out of this chapter.  In particular we will see that limits are part of the formal definition of the other two major topics.</p>
+    <h2 class="I"id="LTC1I1">Section 2-1 : Tangent Lines And Rates Of Change</h2>
+    <p>In this section we are going to take a look at two fairly important problems in the study of calculus. There are two reasons for looking at these problems now.
+    </br>
+    First, both of these problems will lead us into the study of limits, which is the topic of this chapter after all. Looking at these problems here will allow us to start to understand just what a limit is and what it can tell us about a function.
+    </br>
+    Secondly, the rate of change problem that we’re going to be looking at is one of the most important concepts that we’ll encounter in the second chapter of this course. In fact, it’s probably one of the most important concepts that we’ll encounter in the whole course. So, looking at it now will get us to start thinking about it from the very beginning.
+    </br></p>
+    <h3 Class="ST">Tangent Lines</h3>
+    <p>The first problem that we’re going to take a look at is the tangent line problem.  Before getting into this problem it would probably be best to define a tangent line.</p>
+    <p>A tangent line to the function 
+        f(x) at the point x = a is a line that just touches the graph of the function at the point in question and is “parallel” (in some way) to the graph at that point. Take a look at the graph below.</p>
+        <div class="CENTERIMG"><img alt="A graph of some (unknown) function as well as a line.  Indicated on the graph is a point where the line forms a tangent line to the graph of the function (i.e. is parallel to the graph of the function) and a point where the line does not form a tangent line to the graph of the function (i.e. is not parallel to the graph of the function)." height="235" src="Ressources and pictures\Analyse1C1T1I1.png" width="360"></div>
+    <p>In this graph the line is a tangent line at the indicated point because it just touches the graph at that point and is also “parallel” to the graph at that point. Likewise, at the second point shown, the line does just touch the graph at that point, but it is not “parallel” to the graph at that point and so it’s not a tangent line to the graph at that point.
+    </br>
+    At the second point shown (the point where the line isn’t a tangent line) we will sometimes call the line a <b>secant line</b>.
+    </br>
+    We’ve used the word parallel a couple of times now and we should probably be a little careful with it. In general, we will think of a line and a graph as being parallel at a point if they are both moving in the same direction at that point. So, in the first point above the graph and the line are moving in the same direction and so we will say they are parallel at that point. At the second point, on the other hand, the line and the graph are not moving in the same direction so they aren’t parallel at that point.
+    </br>
+    Okay, now that we’ve gotten the definition of a tangent line out of the way let’s move on to the tangent line problem. That’s probably best done with an example.</p>
+    <div class="CENTERIMG">
+        <img alt="Page of the course:" src="Ressources and pictures\Analyse1C1T1I2.PNG">
+        <img alt="Page of the course:" src="Ressources and pictures\Analyse1C1T1I3.PNG">
+        <img alt="Page of the course:" src="Ressources and pictures\Analyse1C1T1I4.PNG">
+        <img alt="Page of the course:" src="Ressources and pictures\Analyse1C1T1I5.PNG">
+        <img alt="Page of the course:" src="Ressources and pictures\Analyse1C1T1I6.PNG">
+        <img alt="Page of the course:" src="Ressources and pictures\Analyse1C1T1I7.PNG">
+    </div>
+    <h3 Class="ST">Rate of change:</h3>
+    <div class="CENTERIMG">
+        <img alt="Page of the course:" src="Ressources and pictures\Analyse1C1T1I8.PNG">
+        <img alt="Page of the course:" src="Ressources and pictures\Analyse1C1T1I9.PNG">
+        <img alt="Page of the course:" src="Ressources and pictures\Analyse1C1T1I10.PNG">
+    </div>
+    <h3 Class="ST">Change of Notation:</h3>
+    <div class="CENTERIMG">
+        <img alt="Page of the course:" src="Ressources and pictures\Analyse1C1T1I11.PNG">
+        <img alt="Page of the course:" src="Ressources and pictures\Analyse1C1T1I12.PNG">
+
+
+    </div>
+    <h2 class="I" id="LTC1I2">The limit</h2>
+        <div class="CENTERIMG">
+            <img alt="Page of the course:" src="Ressources and pictures\Analyse1C1T2I1.PNG">
+            <img alt="Page of the course:" src="Ressources and pictures\Analyse1C1T2I2.PNG">
+            <img alt="Page of the course:" src="Ressources and pictures\Analyse1C1T2I3.PNG">
+            <img alt="Page of the course:" src="Ressources and pictures\Analyse1C1T2I4.PNG">
+            <img alt="Page of the course:" src="Ressources and pictures\Analyse1C1T2I5.PNG">
+            <img alt="Page of the course:" src="Ressources and pictures\Analyse1C1T2I6.PNG">
+            <img alt="Page of the course:" src="Ressources and pictures\Analyse1C1T2I7.PNG">
+            <img alt="Page of the course:" src="Ressources and pictures\Analyse1C1T2I8.PNG">
+            <img alt="Page of the course:" src="Ressources and pictures\Analyse1C1T2I9.PNG">
+            <img alt="Page of the course:" src="Ressources and pictures\Analyse1C1T2I10.PNG">
+            <img alt="Page of the course:" src="Ressources and pictures\Analyse1C1T2I11.PNG">
+            <img alt="Page of the course:" src="Ressources and pictures\Analyse1C1T2I12.PNG">
+            <img alt="Page of the course:" src="Ressources and pictures\Analyse1C1T2I13.PNG">
+            <img alt="Page of the course:" src="Ressources and pictures\Analyse1C1T2I14.PNG">
+            
+        </div>
+    <h2 class="I" id="LTC1I3">THE DEFINITION OF A LIMIT</h2>
+    <div class="CENTERIMG">
+        <img alt="Page of the course:" src="Ressources and pictures\Analyse1C1T3I1.PNG">
+        <img alt="Page of the course:" src="Ressources and pictures\Analyse1C1T3I2.PNG">
+        <img alt="Page of the course:" src="Ressources and pictures\Analyse1C1T3I3.PNG">
+        <img alt="Page of the course:" src="Ressources and pictures\Analyse1C1T3I4.PNG">
+        <img alt="Page of the course:" src="Ressources and pictures\Analyse1C1T3I5.PNG">
+        <img alt="Page of the course:" src="Ressources and pictures\Analyse1C1T3I6.PNG">
+        <img alt="Page of the course:" src="Ressources and pictures\Analyse1C1T3I7.PNG">
+        <img alt="Page of the course:" src="Ressources and pictures\Analyse1C1T3I8.PNG">
+        <img alt="Page of the course:" src="Ressources and pictures\Analyse1C1T3I9.PNG">
+        <img alt="Page of the course:" src="Ressources and pictures\Analyse1C1T3I10.PNG">
+        <img alt="Page of the course:" src="Ressources and pictures\Analyse1C1T3I11.PNG">
+        <img alt="Page of the course:" src="Ressources and pictures\Analyse1C1T3I12.PNG">
+        <img alt="Page of the course:" src="Ressources and pictures\Analyse1C1T3I13.PNG">
+        <img alt="Page of the course:" src="Ressources and pictures\Analyse1C1T3I14.PNG">
+        <img alt="Page of the course:" src="Ressources and pictures\Analyse1C1T3I15.PNG">
+        <img alt="Page of the course:" src="Ressources and pictures\Analyse1C1T3I16.PNG">
+        <img alt="Page of the course:" src="Ressources and pictures\Analyse1C1T3I17.PNG">
+        <img alt="Page of the course:" src="Ressources and pictures\Analyse1C1T3I18.PNG">
+        <img alt="Page of the course:" src="Ressources and pictures\Analyse1C1T3I19.PNG">
+        <img alt="Page of the course:" src="Ressources and pictures\Analyse1C1T3I20.PNG">
+
+
+        
+    </div>
+    <h2 class="I" id="LTC1I4">CONTINUITY</h2>
+    <div class="CENTERIMG">
+        <img alt="Page of the course:" src="Ressources and pictures\Analyse1C1T4I1.PNG">
+        <img alt="Page of the course:" src="Ressources and pictures\Analyse1C1T4I2.PNG">
+        <img alt="Page of the course:" src="Ressources and pictures\Analyse1C1T4I3.PNG">
+        <img alt="Page of the course:" src="Ressources and pictures\Analyse1C1T4I4.PNG">
+        <img alt="Page of the course:" src="Ressources and pictures\Analyse1C1T4I5.PNG">
+        <img alt="Page of the course:" src="Ressources and pictures\Analyse1C1T4I6.PNG">
+        <img alt="Page of the course:" src="Ressources and pictures\Analyse1C1T4I7.PNG">
+        <img alt="Page of the course:" src="Ressources and pictures\Analyse1C1T4I8.PNG">
+        <img alt="Page of the course:" src="Ressources and pictures\Analyse1C1T4I9.PNG">
+
+
+        
+    </div>
+
+</div>
+</body>
+</html>

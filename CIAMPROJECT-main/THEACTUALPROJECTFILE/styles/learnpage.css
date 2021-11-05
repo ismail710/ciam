@@ -1,0 +1,321 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    --shadow: rgb(28, 40, 218);
+    --nav-color: #1b1b1b;
+    --boxShadow1: #558492;
+    --boxShadow2: #6860e0;
+}
+.StuffText{
+    margin-top: 0.5%;
+    text-align: top left;
+    float: left;
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 60px;      
+}
+.nav {
+    background: var(--nav-color);
+    cursor: pointer;
+}
+.nav:after {
+    content: '';
+    clear: both;
+    display: table;
+    width: 100%;
+}
+.nav .ImageLogo{
+    padding-left: 0%;
+    position: absolute left;
+}
+.nav .logo {
+    margin-top: 0%;
+    text-align: top left;
+    float: left;
+    color: white;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 40px;
+    padding-left: 64px;
+}
+.nav ul {
+    float: right;
+    list-style: none;
+    margin-right: 40px;
+    position: relative;
+    
+}
+.nav ul li {
+    float: left;
+    background: var(--nav-color);
+    margin: 0 5px;
+}
+.nav ul li a {
+    color: white;
+    text-decoration: none;
+    line-height: 70px;
+    font-size: 18px;
+    padding: 8px 15px;
+}
+.nav ul li a:hover {
+    color: var(--shadow);
+    box-shadow: 0 0 5px var(--boxShadow1),
+                0 0 5px var(--boxShadow2);
+    border-radius: 20px;
+}
+.nav ul  ul li a:hover {
+    color: var(--shadow);
+    box-shadow: none;
+}
+.nav ul ul{
+    position: absolute;
+    top: 90px;
+    border-top: 3px solid var(--shadow);
+    opacity: 0;
+    visibility: hidden;
+    transition: top .3s;
+}
+.nav ul ul ul {
+    border-top: none;
+
+}
+.nav ul li:hover > ul {
+    top: 70px;
+    opacity: 1;
+    visibility: visible;
+}
+.nav ul ul li {
+    position: relative;
+    margin: 0;
+    width: 150px;
+    float: none;
+    display: list-item;
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+}
+.nav ul ul li a {
+    line-height: 50px;
+}
+.nav ul ul ul li {
+    position: relative;
+    top: -70px;
+    left: 150px;
+}
+.fa-plus {
+    margin-left: 40px;
+    font-size: 15px;
+
+}
+.show, .icon, input {
+    display: none;
+}
+/* responsive website */
+@media all and (max-width: 968px) {
+    .nav ul {
+        margin-left: 0;
+        float: left;
+    }
+    .logo {
+        padding-left: 30px;
+        width: 100%;
+        position: relative;
+    }
+    .nav ul li, .nav ul ul li {
+        display: block;
+        width: 100%;
+    }
+    .nav ul li a:hover {
+        box-shadow: none;
+    }
+    .nav ul ul {
+        top: 70px;
+        position: static;
+        border: none;
+        float: none;
+        display: none;
+        opacity: 1;
+        visibility: visible;
+    }
+    .nav ul ul ul li {
+        position: static;
+    }
+    .nav ul ul li {
+        border-bottom: 0px;
+    }
+    .nav ul ul a {
+        padding-left: 40px;
+    }
+    .nav ul ul ul a {
+       padding-left: 80px; 
+    }
+    .show {
+        display: block;
+        color: white;
+        font-size: 18px;
+        padding: 0 20px;
+        line-height: 70px;
+        cursor: pointer;
+    }
+    .show:hover {
+        color: var(--shadow);
+    }
+    .icon {
+        display: block;
+        color: white;
+        position: absolute;
+        right: 40px;
+        line-height: 70px;
+        font-size: 25px;
+        cursor: pointer;
+    }
+    .nav ul a:hover {
+        box-shadow: none;
+    }
+    .show + a, ul {
+        display: none;
+    }
+    [id^=btn]:checked + ul {
+        display: block;
+
+    }
+}
+/* learnPage subjects */
+header {
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 3px 2px 3px rgb(80, 121, 148) ;
+    margin-top: 10%;
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+@font-face {
+    font-family: Roboto;
+    src: url("./fonts/Roboto-Regular.ttf");
+}
+.body {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    background: url("Ressources and pictures/IMG-20211104-WA0002.jpg");
+    background-size: 600px;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100vw;
+    height: 50%;
+    font-family: Roboto;
+    background-position-x: right;
+    background-position-y: 300px;
+    
+}
+#flexible {
+    margin-left: 50%;
+    margin-top: -44.5%;
+}
+#flex {
+    margin-left: 28%;
+    padding: 10px;
+    margin-top: -1.4%;
+}
+.main-wrapper {
+    width: 100vw;
+    height: 100vh;
+    padding-top: 20px;
+    padding-left: 50px;
+}
+.menu-btn {
+    position: relative;
+    width: 200px;
+    height: 160px;
+    color: white;
+    font-size: 16px;
+}
+.dropdown-trigger, .li {
+    height: 80px;
+}
+.dropdown-trigger {
+    background: linear-gradient(180deg, rgba(68, 68, 68, .76)15%, #313338 100%);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.28);
+}
+.dropdown-wrapper {
+    height: 175px;
+    width: 100%;
+    position: absolute;
+    top: 200px;
+    left:50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: flex-end;
+    justify-content: stretch;
+    filter: drop-shadow(4px 6px 8px rgba(0, 0, 0, 0.33));
+    visibility: hidden;
+    opacity: 0;
+    transition: 1s ease-in-out;
+}
+.ul, .li {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+.li {
+    background: linear-gradient(180deg, rgba(68, 68, 68, .76)0%, #3b3b3b 100%);
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+.li:first-child {
+    border-radius: 10px 10px 0 0;
+}
+.li:last-child {
+    border-radius: 0 0 10px 10px;
+}
+.dropdown-trigger, .li {
+    padding-left: 20px;
+}
+.span1 {
+    padding-left: 10px;
+}
+.material-icons sizing {
+    font-size: 18px;
+}
+.ul {
+    position: relative;
+}
+.ul::before {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 20%;
+    border-top: 8px solid transparent;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid #5e6161;
+    z-index: 1;
+}
+.menu-btn:hover .dropdown-trigger {
+    color: #2780b4;
+    cursor: pointer;
+}
+em, .span1 {
+    transition: .5s ease-in-out;
+}
+.span1 a {
+    text-decoration: none;
+    color: white;
+}
+.menu-btn:hover .dropdown-wrapper {
+    top: 100%;
+    visibility: visible;
+    opacity: 1;
+
+}
+.li:hover, .span1 a:hover {
+    color: #2780b4;
+    cursor: pointer;
+}

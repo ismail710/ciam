@@ -1,0 +1,59 @@
+<!--Before digging into the code , beware , be scared , fear it , lists are not working for some reason
+(i suspect it's because of the css , when I deleted the CSS link it worked. The 
+CSS only contained the navbar style , so that's probably what's causing the problem)-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/Errorpage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>CALCULUS 1: EXERCICES</title>
+</head>
+
+<body>
+    <!--///////This stuff concerns the navbard feel free to skip it (in fact you should skip it)\\\\\-->
+    <nav>
+        <div class="logo">
+            <img src="Testingforthelogo.png" class="ImageLogo" alt="Logo CIAM" height="64"; width="64";>
+         </div>
+        <a class="StuffText">CIAM</a>
+        <label for="btn" class="icon">
+            <span class="fa fa-bars" aria-hidden="true"></span>
+        </label>
+        <input type="checkbox" id="btn">
+        <ul>
+            <li><a href="learnpage.html">Home</a></li>
+            <li>
+                <label for="btn-1" class="show">Learn +</label>
+                <a href="#">Learn</a>
+                <input type="checkbox" id="btn-1">
+                <ul>
+                    <li><a href="AnalyseCours.html">Mathematique</a></li>
+                    <li><a href="Errorpage.html">Informatique</a></li>
+                    <li>
+                        <label for="btn-2" class="show">More +</label>
+                        <a href="#">More
+                            <span class="fa fa-plus" aria-hidden="true"></span>
+                        </a>
+                        <input type="checkbox" id="btn-2">
+                        <ul>
+                            <li><a href="AnalyseExercice.html">Practice</a></li>
+                            <li><a href="Errorpage.html">Ressources</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="Errorpage.html">Contact us</a></li>
+            <li><a href="simple login.html">Login</a></li>
+        </ul>
+    </nav>
+    <!--///////The stuff above concerns the navbard feel free to skip it (in fact you should skip it)\\\\\-->
+    <div class="CENTERIMG">
+        <img src="Ressources and pictures\Error.jpg" height="420"; width="640";>
+        <p>There is only one page working and it's the math Analysis page. So you're not supposed to be here. Return <a href="learnpage.html">home</a> little boy before you see something you regret</p>
+    </div>
+</body>
+</html>

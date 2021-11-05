@@ -1,0 +1,127 @@
+<!--Before digging into the code , beware , be scared , fear it , lists are not working for some reason
+(i suspect it's because of the css , when I deleted the CSS link it worked. The 
+CSS only contained the navbar style , so that's probably what's causing the problem)-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/AnalyseExercice.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>CALCULUS 1: EXERCICES</title>
+</head>
+
+<body>
+    <!--///////This stuff concerns the navbard feel free to skip it (in fact you should skip it)\\\\\-->
+    <nav>
+        <div class="logo">
+            <img src="Testingforthelogo.png" class="ImageLogo" alt="Logo CIAM" height="64"; width="64";>
+         </div>
+        <label for="btn" class="icon">
+            <span class="fa fa-bars" aria-hidden="true"></span>
+        </label>
+        <input type="checkbox" id="btn">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li>
+                <label for="btn-1" class="show">Learn +</label>
+                <a href="#">Learn</a>
+                <input type="checkbox" id="btn-1">
+                <ul>
+                    <li><a href="AnalyseCours.html">Mathematique</a></li>
+                    <li><a href="Errorpage.html">Informatique</a></li>
+                    <li>
+                        <label for="btn-2" class="show">More +</label>
+                        <a href="#">More
+                            <span class="fa fa-plus" aria-hidden="true"></span>
+                        </a>
+                        <input type="checkbox" id="btn-2">
+                        <ul>
+                            <li><a href="AnalyseExercice.html">Practice</a></li>
+                            <li><a href="Errorpage.html">Ressources</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="Errorpage.html">Contact us</a></li>
+            <li><a href="Errorpage.html">Login</a></li>
+        </ul>
+    </nav>
+    <!--///////The stuff above concerns the navbard feel free to skip it (in fact you should skip it)\\\\\-->
+
+<div class="IamNotWorkingOnThatOneByOne">
+    <h1 class="CoursAnalyseEntête">ANALYSIS 1: EXERCICES</h1>
+    <h2 class="Introduction">Introduction</h2>
+<p>
+</p>
+<!--This list acts as an index the same as the index of a wikipedia page (I need to put it on a table)-->
+<div class="ListDeCours">
+    <h3><a href="#LTC1">EXERCICES</a></h3>
+    <ol>
+        <li class="ListeIndexation"><a href="#LTC1I1">LIMITS:</a></li>
+        <li class="ListeIndexation"><a href="#LTC1I2">DERIVATIVES:(UNLOCK IN FULL VERSION OF WEBSITE)</a></li>
+        <li class="ListeIndexation"><a href="#LTC1I3">INTEGRALS:(UNLOCK IN FULL VERSION OF WEBSITE)</a></li>
+     </ol>
+    <h3><a href="#LTC2">CORRECTION</a></h3>
+    <ol> 
+        <ul class="ListeIndexation"><a href="#LTC1I#">LIMITS</a></ul>
+        <ul class="ListeIndexation"><a href="#LTC1I#">DERIVATIVES(UNLOCK IN FULL VERSION OF WEBSITE)</a></ul>
+        <ul class="ListeIndexation"><a href="#LTC1I#">INTEGRALS(UNLOCK IN FULL VERSION OF WEBSITE)</a></ul>
+    </ol>
+</div>
+<span class="picture"><img src="Ressources and pictures/IMG-20211104-WA0020.jpg"></span>
+<h1 class="T" id="LTC1">EXERCICES</h1>
+    <h2 class="LIMITS" id="LCI1T1">LIMITS</h2>
+    <div class="CENTERIMG">
+        <h3 id="Q1E1">EXERCICE 1<a  href="#C1E1">corrigé</a></h3>
+        <img src="Ressources and pictures\Analyse1C1E1I1.PNG">
+        <h3 id="Q1E2">EXERCICE 2<a  href="#C1E2">corrigé</a></h3>
+        <img src="Ressources and pictures\Analyse1C1E2I1.PNG">
+        <h3 id="Q1E3">EXERCICE 3<a  href="#C1E3">corrigé</a></h3>
+        <img src="Ressources and pictures\Analyse1C1E3I1.PNG">
+        <h3 id="Q1E4">EXERCICE 4<a  href="#C1E4">corrigé</a></h3>
+        <img src="Ressources and pictures\Analyse1C1E4I1.PNG">
+        <h3 id="Q1E5">EXERCICE 5<a  href="#C1E5">corrigé</a></h3>
+        <img src="Ressources and pictures\Analyse1C1E5I1.PNG">
+        <h3 id="Q1E6">EXERCICE 6<a  href="#C1E6">corrigé</a></h3>
+        <img src="Ressources and pictures\Analyse1C1E6I1.PNG">
+        <h3 id="Q1E7">EXERCICE 7<a  href="#C1E7">corrigé</a></h3>
+        <img src="Ressources and pictures\Analyse1C1E7I1.PNG">
+        <h3 id="Q1E8">EXERCICE 8<a  href="#C1E8">corrigé</a></h3>
+        <img src="Ressources and pictures\Analyse1C1E8I1.PNG">
+    </div>
+
+    <h1 class="T" id="LTC2">CORRECTION</h1>
+    <h2 class="LIMITS" id="LCI1T1">LIMITS</h2>
+    <div class="CENTERIMG">
+        <h3 id="C1E1">EXERCICE 1<a href="#Q1E1">(Exercice)</a></h3>
+        <img src="Ressources and pictures\Analyse1C1E1C1.PNG">
+        <img src="Ressources and pictures\Analyse1C1E1C2.PNG">
+        <h3 id="C1E2">EXERCICE 2<a href="#Q1E2">(Exercice)</a></h3>
+        <img src="Ressources and pictures\Analyse1C1E2C1.PNG">
+        <img src="Ressources and pictures\Analyse1C1E2C2.PNG">
+        <h3 id="C1E3">EXERCICE 3<a href="#Q1E3">(Exercice)</a></h3>
+        <img src="Ressources and pictures\Analyse1C1E3C1.PNG">
+    
+        <h3 id="C1E4">EXERCICE 4<a href="#Q1E4">(Exercice)</a></h3>
+        <img src="Ressources and pictures\Analyse1C1E4C1.PNG">
+        <img src="Ressources and pictures\Analyse1C1E4C2.PNG">
+        <h3 id="C1E5">EXERCICE 5<a href="#Q1E5">(Exercice)</a></h3>
+        <img src="Ressources and pictures\Analyse1C1E5C1.PNG">
+    
+        <h3 id="C1E6">EXERCICE 6<a href="#Q1E6">(Exercice)</a></h3>
+        <img src="Ressources and pictures\Analyse1C1E6C1.PNG">
+        <img src="Ressources and pictures\Analyse1C1E6C2.PNG">
+        <h3 id="C1E7">EXERCICE 7<a href="#Q1E7">(Exercice)</a></h3>
+        <img src="Ressources and pictures\Analyse1C1E7C1.PNG">
+        
+        <h3 id="C1E8">EXERCICE 8<a href="#Q1E7">(Exercice)</a></h3>
+        <img src="Ressources and pictures\Analyse1C1E8C1.PNG">
+        
+    </div>
+
+</div>
+</body>
+</html>

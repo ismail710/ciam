@@ -1,0 +1,301 @@
+/* For some reasons list do not work because of the navbar possibly?*/
+/* All of this concerns the navbar , if you wish to ignore it then do (it's for the best
+if you want to edit stuff about it edit it diretly in the navbar file then copy paste*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    --shadow: rgb(28, 40, 218);
+    --nav-color: #1b1b1b;
+    --boxShadow1: #558492;
+    --boxShadow2: #6860e0;
+}
+nav {
+    background: var(--nav-color);
+    cursor: pointer;
+}
+nav:after {
+    content: '';
+    clear: both;
+    display: table;
+    width: 100%;
+}
+nav .ImageLogo{
+    padding-left: 0%;
+    position: absolute left;
+}
+nav .logo {
+    margin-top: 0%;
+    text-align: top left;
+    float: left;
+    color: white;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 40px;
+    padding-left: 64px;
+}
+nav ul {
+    float: right;
+    list-style: none;
+    margin-right: 40px;
+    position: relative;
+    
+}
+nav ul li {
+    float: left;
+    background: var(--nav-color);
+    margin: 0 5px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    line-height: 70px;
+    font-size: 18px;
+    padding: 8px 15px;
+}
+nav ul li a:hover {
+    color: var(--shadow);
+    box-shadow: 0 0 5px var(--boxShadow1),
+                0 0 5px var(--boxShadow2);
+    border-radius: 20px;
+}
+nav ul  ul li a:hover {
+    color: var(--shadow);
+    box-shadow: none;
+}
+nav ul ul{
+    position: absolute;
+    top: 90px;
+    border-top: 3px solid var(--shadow);
+    opacity: 0;
+    visibility: hidden;
+    transition: top .3s;
+}
+nav ul ul ul {
+    border-top: none;
+
+}
+nav ul li:hover > ul {
+    top: 70px;
+    opacity: 1;
+    visibility: visible;
+}
+nav ul ul li {
+    position: relative;
+    margin: 0;
+    width: 150px;
+    float: none;
+    display: list-item;
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+}
+nav ul ul li a {
+    line-height: 50px;
+}
+nav ul ul ul li {
+    position: relative;
+    top: -70px;
+    left: 150px;
+}
+.fa-plus {
+    margin-left: 40px;
+    font-size: 15px;
+
+}
+.show, .icon, input {
+    display: none;
+}
+@media all and (max-width: 968px) {
+    nav ul {
+        margin-left: 0;
+        float: left;
+    }
+    .logo {
+        padding-left: 30px;
+        width: 100%;
+        position: relative;
+    }
+    nav ul li, nav ul ul li {
+        display: block;
+        width: 100%;
+    }
+    nav ul li a:hover {
+        box-shadow: none;
+    }
+    nav ul ul {
+        top: 70px;
+        position: static;
+        border: none;
+        float: none;
+        display: none;
+        opacity: 1;
+        visibility: visible;
+    }
+    nav ul ul ul li {
+        position: static;
+    }
+    nav ul ul li {
+        border-bottom: 0px;
+    }
+    nav ul ul a {
+        padding-left: 40px;
+    }
+    nav ul ul ul a {
+       padding-left: 80px; 
+    }
+    .show {
+        display: block;
+        color: white;
+        font-size: 18px;
+        padding: 0 20px;
+        line-height: 70px;
+        cursor: pointer;
+    }
+    .show:hover {
+        color: var(--shadow);
+    }
+    .icon {
+        display: block;
+        color: white;
+        position: absolute;
+        right: 40px;
+        line-height: 70px;
+        font-size: 25px;
+        cursor: pointer;
+    }
+    nav ul a:hover {
+        box-shadow: none;
+    }
+    .show + a, ul {
+        display: none;
+    }
+    [id^=btn]:checked + ul {
+        display: block;
+
+    }
+}
+/*stuff after this bunch of text concerns the webpage*/
+.IamNotWorkingOnThatOneByOne {
+ box-sizing: border-box;
+}
+.CoursAnalyseEntête {
+    text-align: center;
+    background: linear-gradient(rgba(15, 25, 87, 0.4), rgba(44, 43, 49, 0.7));
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    width: 50%;
+    height: 60px;
+    padding: 10px;
+    margin-top: 10px;
+    color: #0c074d;
+    border-bottom: 4px solid #4596b6;
+    font-style: italic;
+    font-family: 'poppins';
+}
+.Introduction {
+    margin: 10px;
+    color: rgb(52, 83, 168);
+    text-decoration-line: underline;
+
+}
+p {
+    text-indent: 40px;
+    margin-left: 20px;
+    line-height: 40px;
+    margin-right: 50px;
+    background: linear-gradient(#e6dee6,#96b6b4);
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    box-shadow: #1b1b1b #4596b6 #4596b6 5px;
+}
+.ListDeCours {
+    display: table;
+    padding: 7px;
+}
+.ListDeCours {
+    border: 1px solid #a2a9b1;
+    background-color: #dce0e4;
+    padding: 20px;
+    font-size: 95%;
+    margin: 20px 10px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px #889194;
+}
+.ListDeCours ol {
+    list-style: none;
+    margin: 10px;
+}
+li {
+    text-decoration: none;
+}
+.ListDeCours h3 a {
+    color: rgb(211, 4, 4);
+    text-decoration: none;
+}
+.IamNotWorkingOnThatOneByOne img {
+    width: 95vw;
+    height: auto;
+}
+.picture img {
+   width: 500px;
+   margin-top: -37%;
+   margin-left: 50%;
+   display: inline-block;
+}
+.img1 {
+    width: 50px;
+    height: 50px;
+}
+.T{
+    font-weight: 800;
+    color: rgb(138, 17, 17);
+    text-decoration: underline;
+    margin: 20px;
+}
+.I {
+    margin: 20px;
+    color: #0c074d;
+    text-decoration: underline;
+}
+.ST {
+    margin: 20px;
+    text-decoration: underline;
+    color: rgb(124, 29, 148);
+    font-size: 20px;
+}
+.ListeIndexation {
+    padding-left: 15px;
+    margin-top: 10px;
+}
+.ListeIndexation a {
+    text-decoration: none;
+}
+.ListeIndexation a:hover {
+    text-decoration: underline solid 3px #4596b6;
+    color: #4596b6;
+    transition: 0.5s ease-in-out;
+}
+.ST{
+    font-weight: 600;
+}
+.CENTERIMG {
+    margin: 0 auto;
+    width: 100%;
+    align-content: center;
+    text-align: center;
+}
+@media all and (max-width: 968px) {
+    .CoursAnalyseEntête {
+        height: 70px;
+        padding-top: 20px ;
+        font-size: 22px;
+    }
+    .picture img {
+        display: none;
+     }
+
+}
